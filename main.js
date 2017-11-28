@@ -22,7 +22,7 @@ var mainState = {
 		
 		game.load.image('starfield', "assets/maxresdefault.jpg");
 		game.load.image('player', "assets/dDejW4v.png");
-		game.load.image('bullet', "assets/bullet2.jpg");
+		game.load.image('bullet', "assets/bullet2.png");
 		game.load.image('enemy', "assets/enemy.png");
 	},
 	create:function () {
@@ -56,7 +56,7 @@ var mainState = {
 		createEnemies();
 
 		scoreText = game.add.text(0,550, 'Score:', {font: '32px Arial', fill: '#fff'});
-		winText = game.add.text(game.world.centerX, game.world.centerY, 'You Win!!', {font: '32px Arial', fill: '#fff'});
+		winText = game.add.text(200, 100, 'You Win!! Press F5 to restart!', {font: '32px Arial', fill: '#fff'});
 
 		winText.visible = false;
 
